@@ -1,328 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-template="onyx">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Free Prop Firm Landing Page Templates (React + Tailwind) | PropSim</title>
-    <meta
-      name="description"
-      content="10 free, open-source prop firm website templates in React and Tailwind CSS: landing, sign-up and sign-in pages with challenge pricing and rules. MIT licensed."
-    />
-    <link rel="canonical" href="https://propsim-enterprise.github.io/prop-firm-landing-page-templates/" />
+    <title>Master Finance — Funded Trader Programs | Trade Firm Capital, Keep the Profits</title>
+    <meta name="description" content="Master Finance provides funded trading accounts to qualified futures and forex traders. Pass our transparent evaluation, receive up to $200K in buying power, earn up to 90% profit split. Est. 2021 · 12,800+ funded traders · $4.7M+ paid out." />
+    <link rel="canonical" href="https://masterfinance.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Free Prop Firm Landing Page Templates | PropSim" />
-    <meta
-      property="og:description"
-      content="10 open-source prop firm website templates in React and Tailwind CSS. Free for commercial use."
-    />
-    <meta property="og:url" content="https://propsim-enterprise.github.io/prop-firm-landing-page-templates/" />
-    <meta property="og:image" content="https://propsim-enterprise.github.io/prop-firm-landing-page-templates/og/gallery.jpg" />
+    <meta property="og:title" content="Master Finance — Funded Trader Programs" />
+    <meta property="og:description" content="Trade firm capital. Keep up to 90% of profits. Transparent evaluations, fast payouts, automatic scaling to $1M+. Est. 2021." />
+    <meta property="og:url" content="https://masterfinance.com/" />
+    <meta property="og:image" content="https://masterfinance.com/og/onyx.jpg" />
+    <meta property="og:site_name" content="Master Finance" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Master Finance — Funded Trader Programs" />
+    <meta name="twitter:description" content="Trade firm capital. Keep up to 90% of profits. Transparent evaluations, fast payouts, automatic scaling to $1M+." />
+    <meta name="twitter:site" content="@masterfinance" />
+    <meta name="twitter:creator" content="@masterfinance" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="site/gallery.css" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareSourceCode",
-        "name": "Prop Firm Landing Page Templates",
-        "description": "Free, open-source prop firm landing page templates in React and Tailwind CSS.",
-        "codeRepository": "https://github.com/PropSim-Enterprise/prop-firm-landing-page-templates",
-        "programmingLanguage": ["TypeScript", "React", "Tailwind CSS"],
-        "license": "https://opensource.org/licenses/MIT",
-        "author": { "@type": "Organization", "name": "PropSim", "url": "https://propsim.markets" }
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Are these prop firm landing page templates really free?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. All ten templates are MIT licensed: use them for commercial prop firm websites, change anything, and keep or remove the small credit line in the footer."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I use the templates without PropSim?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Point the buttons at any checkout and trader dashboard in site/config.ts. PropSim is optional: it runs the checkout, challenge engine, trader terminal and payouts if you want them."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I add my own challenges and prices?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Edit site/config.ts: your firm name, logo, challenge sizes, prices, profit targets, drawdown limits and links. Every template reads the same file, so you can switch designs at any time."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Are the templates mobile friendly?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Every template has a phone menu, 44 px tap targets and text of at least 12 px, and is checked for horizontal overflow at 360 px and 414 px widths."
-            }
-          }
-        ]
-      }
-    </script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#08090a" />
   </head>
   <body>
-    <header class="top">
-      <div class="wrap top-row">
-        <a class="brand" href="https://propsim.markets/?utm_source=github&amp;utm_medium=template_gallery&amp;utm_campaign=prop-firm-landing-page-templates">
-          <img src="site/img/propsim-icon.png" alt="" width="28" height="28" />
-          <span>PropSim</span>
-        </a>
-        <nav class="top-nav">
-          <a href="#templates">Templates</a>
-          <a href="#how">How to use</a>
-          <a href="#faq">FAQ</a>
-          <a class="btn btn-ghost" href="https://github.com/PropSim-Enterprise/prop-firm-landing-page-templates">GitHub</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="wrap">
-          <p class="eyebrow">Open source · MIT licensed · 10 designs</p>
-          <h1>Free prop firm landing page templates</h1>
-          <p class="lead">
-            Ten hand-built website templates for prop trading firms, in React and Tailwind CSS. Challenge
-            pricing, an account picker, a phase-by-phase rules table, an FAQ, and matching sign-up and sign-in
-            pages, all built from one config file. Free for commercial use.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#templates">Browse the templates</a>
-            <a class="btn btn-ghost" href="https://github.com/PropSim-Enterprise/prop-firm-landing-page-templates">View on GitHub</a>
-          </div>
-          <p class="fine">
-            Made by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=template_gallery&amp;utm_campaign=prop-firm-landing-page-templates">PropSim</a>, the software that runs prop firms. These are the same designs PropSim firms launch with.
-          </p>
-        </div>
-      </section>
-
-      <section id="templates" class="section">
-        <div class="wrap">
-          <h2>Pick a prop firm website design</h2>
-          <p class="section-lead">
-            Every template shows the same data in its own style. Click one for a live demo with sample challenges.
-          </p>
-          <div class="grid">
-            <!-- cards:start -->
-        <article class="card">
-          <a class="card-shot" href="templates/aurum/"><img src="site/img/aurum.webp" alt="Aurum prop firm landing page template: dark, luxury, serif design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/aurum/">Aurum</a></h3><span class="swatch" aria-hidden="true"><i style="background:#0a0908"></i><i style="background:#f2ece0"></i><i style="background:#c8a96a"></i></span></div>
-            <p>Black and champagne gold, set like an invitation. Classical serif headlines, thin gold frames and a scrolling collection of accounts. Suits firms with large accounts and a premium price point.</p>
-            <ul class="tags"><li>dark</li><li>luxury</li><li>serif</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/aurum/">Live demo <span aria-hidden="true">→</span></a><a href="templates/aurum/signup/">Sign-up page</a><a href="templates/aurum/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/onyx/"><img src="site/img/onyx.webp" alt="Onyx prop firm landing page template: dark, minimal, data-led design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/onyx/">Onyx</a></h3><span class="swatch" aria-hidden="true"><i style="background:#08090a"></i><i style="background:#f7f8f8"></i><i style="background:#6ee7b7"></i></span></div>
-            <p>Near-black and precise. Large tight headlines, hairline borders and one mint accent for the numbers that matter. Built around a clear account picker and a phase-by-phase rules table.</p>
-            <ul class="tags"><li>dark</li><li>minimal</li><li>data-led</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/onyx/">Live demo <span aria-hidden="true">→</span></a><a href="templates/onyx/signup/">Sign-up page</a><a href="templates/onyx/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/quant/"><img src="site/img/quant.webp" alt="Quant prop firm landing page template: dark, terminal, data-dense design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/quant/">Quant</a></h3><span class="swatch" aria-hidden="true"><i style="background:#0c0f14"></i><i style="background:#d6dde6"></i><i style="background:#ffb000"></i></span></div>
-            <p>Built like a trading terminal. Monospace type, boxed panels and an amber accent on graphite. Every account from every program sits in one sortable, filterable table. Made for traders who read numbers first.</p>
-            <ul class="tags"><li>dark</li><li>terminal</li><li>data-dense</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/quant/">Live demo <span aria-hidden="true">→</span></a><a href="templates/quant/signup/">Sign-up page</a><a href="templates/quant/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/volt/"><img src="site/img/volt.webp" alt="Volt prop firm landing page template: dark, bold, high-energy design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/volt/">Volt</a></h3><span class="swatch" aria-hidden="true"><i style="background:#0b0b0c"></i><i style="background:#f4f4f0"></i><i style="background:#d7ff3d"></i></span></div>
-            <p>Loud and fast. Huge condensed type, chunky borders and electric lime used in big blocks. Every account size on show at once, a moving band of real sizes and fees, and a lime finish.</p>
-            <ul class="tags"><li>dark</li><li>bold</li><li>high-energy</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/volt/">Live demo <span aria-hidden="true">→</span></a><a href="templates/volt/signup/">Sign-up page</a><a href="templates/volt/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/azure/"><img src="site/img/azure.webp" alt="Azure prop firm landing page template: light, friendly, gradient design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/azure/">Azure</a></h3><span class="swatch" aria-hidden="true"><i style="background:#f4f8ff"></i><i style="background:#0b1a33"></i><i style="background:#0284c7"></i></span></div>
-            <p>Bright and friendly, in the Cobalt family. A sky-to-indigo gradient, rounded white cards and a live account configurator right in the hero, with pricing cards for every size underneath.</p>
-            <ul class="tags"><li>light</li><li>friendly</li><li>gradient</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/azure/">Live demo <span aria-hidden="true">→</span></a><a href="templates/azure/signup/">Sign-up page</a><a href="templates/azure/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/cobalt/"><img src="site/img/cobalt.webp" alt="Cobalt prop firm landing page template: light, bold, friendly design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/cobalt/">Cobalt</a></h3><span class="swatch" aria-hidden="true"><i style="background:#f5f7fb"></i><i style="background:#0b1533"></i><i style="background:#2547f4"></i></span></div>
-            <p>Bright and confident. Clean white and cool grey with a strong cobalt blue, rounded cards and a friendly geometric sans. Pick a size, then follow the account phase by phase to funded.</p>
-            <ul class="tags"><li>light</li><li>bold</li><li>friendly</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/cobalt/">Live demo <span aria-hidden="true">→</span></a><a href="templates/cobalt/signup/">Sign-up page</a><a href="templates/cobalt/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/harbor/"><img src="site/img/harbor.webp" alt="Harbor prop firm landing page template: light, calm, banking design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/harbor/">Harbor</a></h3><span class="swatch" aria-hidden="true"><i style="background:#0f1d33"></i><i style="background:#f7f9fc"></i><i style="background:#5b8def"></i></span></div>
-            <p>Calm and trustworthy, like a modern bank. A deep navy hero with an account card laid out like a statement, an overview of every program, and quiet, well-spaced pages in Manrope.</p>
-            <ul class="tags"><li>light</li><li>calm</li><li>banking</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/harbor/">Live demo <span aria-hidden="true">→</span></a><a href="templates/harbor/signup/">Sign-up page</a><a href="templates/harbor/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/ivory/"><img src="site/img/ivory.webp" alt="Ivory prop firm landing page template: light, editorial, serif design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/ivory/">Ivory</a></h3><span class="swatch" aria-hidden="true"><i style="background:#f6f3ec"></i><i style="background:#161512"></i><i style="background:#1d5c46"></i></span></div>
-            <p>Warm paper, serif headlines and a deep green accent. Reads like a well-set financial broadsheet: an account builder with a size slider, a full comparison of every account, and a dark closing band.</p>
-            <ul class="tags"><li>light</li><li>editorial</li><li>serif</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/ivory/">Live demo <span aria-hidden="true">→</span></a><a href="templates/ivory/signup/">Sign-up page</a><a href="templates/ivory/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/onyx-light/"><img src="site/img/onyx-light.webp" alt="Onyx Light prop firm landing page template: light, minimal, data-led design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/onyx-light/">Onyx Light</a></h3><span class="swatch" aria-hidden="true"><i style="background:#fcfcfd"></i><i style="background:#0b0c0e"></i><i style="background:#047857"></i></span></div>
-            <p>Onyx on white. The same precise layout, tight headlines and phase-by-phase rules table, in near-black ink on bright paper with a deep emerald accent.</p>
-            <ul class="tags"><li>light</li><li>minimal</li><li>data-led</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/onyx-light/">Live demo <span aria-hidden="true">→</span></a><a href="templates/onyx-light/signup/">Sign-up page</a><a href="templates/onyx-light/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-        <article class="card">
-          <a class="card-shot" href="templates/pop/"><img src="site/img/pop.webp" alt="Pop prop firm landing page template: light, playful, brutalist design" width="1280" height="800" loading="lazy" /></a>
-          <div class="card-body">
-            <div class="card-head"><h3><a href="templates/pop/">Pop</a></h3><span class="swatch" aria-hidden="true"><i style="background:#fff6e5"></i><i style="background:#111111"></i><i style="background:#ffd23f"></i></span></div>
-            <p>Playful neo-brutalism. Cream paper, thick black outlines, hard shadows and bright yellow, pink and blue blocks. Accounts are picked like a checkout, with a receipt that lists every rule.</p>
-            <ul class="tags"><li>light</li><li>playful</li><li>brutalist</li></ul>
-            <div class="card-links"><a class="card-link" href="templates/pop/">Live demo <span aria-hidden="true">→</span></a><a href="templates/pop/signup/">Sign-up page</a><a href="templates/pop/signin/">Sign-in page</a></div>
-          </div>
-        </article>
-            <!-- cards:end -->
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt">
-        <div class="wrap">
-          <h2>Everything a prop firm website needs</h2>
-          <div class="features">
-            <div>
-              <h3>Challenge pricing and account picker</h3>
-              <p>Programs as tabs, every account size with its fee, and a "start challenge" button per account.</p>
-            </div>
-            <div>
-              <h3>Rules, phase by phase</h3>
-              <p>Profit target, daily loss, max drawdown, trailing drawdown, minimum days and profit split for every phase.</p>
-            </div>
-            <div>
-              <h3>An FAQ that writes itself</h3>
-              <p>Answers about your rules, sizes and prices come from your challenges. Add your own questions on top.</p>
-            </div>
-            <div>
-              <h3>Built for phones</h3>
-              <p>A phone menu, 44 px tap targets and layouts checked at 360 px and 414 px wide.</p>
-            </div>
-            <div>
-              <h3>One config file</h3>
-              <p>Name, logo, challenges, prices and links live in <code>site/config.ts</code>. Switch designs without touching it.</p>
-            </div>
-            <div>
-              <h3>Sign-up and sign-in pages</h3>
-              <p>Each design has a matching trader sign-up and sign-in page. The chosen challenge carries over to the form.</p>
-            </div>
-            <div>
-              <h3>Static and fast</h3>
-              <p>Builds to plain files. Host it on GitHub Pages, Netlify, Vercel, Cloudflare Pages or any web server.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="how" class="section">
-        <div class="wrap narrow">
-          <h2>Launch your prop firm website in three steps</h2>
-          <ol class="steps">
-            <li>
-              <strong>Get the code.</strong> Clone the repository or click "Use this template" on GitHub, then run
-              <code>npm install</code>.
-            </li>
-            <li>
-              <strong>Make it yours.</strong> Edit <code>site/config.ts</code> with your firm name, logo, challenges,
-              prices and links, and replace the disclaimer in <code>src/core/disclaimer.tsx</code>.
-            </li>
-            <li>
-              <strong>Publish.</strong> Set <code>DEMO_MODE = false</code>, run <code>npm run build</code> and upload the
-              <code>dist</code> folder to any host.
-            </li>
-          </ol>
-          <pre><code>git clone https://github.com/PropSim-Enterprise/prop-firm-landing-page-templates.git
-cd prop-firm-landing-page-templates
-npm install
-npm run dev</code></pre>
-        </div>
-      </section>
-
-      <section class="section cta">
-        <div class="wrap narrow">
-          <h2>A landing page is the front door. PropSim runs the whole firm.</h2>
-          <p>
-            These templates show your challenges. PropSim sells them: your branded storefront and checkout, a risk
-            engine that checks every tick against your rules, a trader terminal on your brand, payouts, CRM and KYC.
-            Start on the free plan and launch in minutes.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://propsim.markets/?utm_source=github&amp;utm_medium=template_gallery&amp;utm_campaign=prop-firm-landing-page-templates">Start your prop firm free</a>
-            <a class="btn btn-ghost" href="https://propsim.markets/pricing?utm_source=github&amp;utm_medium=template_gallery&amp;utm_campaign=prop-firm-landing-page-templates">See PropSim pricing</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="section">
-        <div class="wrap narrow">
-          <h2>Questions about the prop firm templates</h2>
-          <details>
-            <summary>Are these prop firm landing page templates really free?</summary>
-            <p>Yes. All ten templates are MIT licensed: use them for commercial prop firm websites, change anything, and keep or remove the small credit line in the footer.</p>
-          </details>
-          <details>
-            <summary>Can I use the templates without PropSim?</summary>
-            <p>Yes. Point the buttons at any checkout and trader dashboard in <code>site/config.ts</code>. PropSim is optional: it runs the checkout, challenge engine, trader terminal and payouts if you want them.</p>
-          </details>
-          <details>
-            <summary>How do I add my own challenges and prices?</summary>
-            <p>Edit <code>site/config.ts</code>: your firm name, logo, challenge sizes, prices, profit targets, drawdown limits and links. Every template reads the same file, so you can switch designs at any time.</p>
-          </details>
-          <details>
-            <summary>Are the templates mobile friendly?</summary>
-            <p>Yes. Every template has a phone menu, 44 px tap targets and text of at least 12 px, and is checked for horizontal overflow at 360 px and 414 px widths.</p>
-          </details>
-          <details>
-            <summary>What do I need to run them?</summary>
-            <p>Node.js 20 or newer. The templates use React 19, Vite and Tailwind CSS 3, and build to static files.</p>
-          </details>
-          <details>
-            <summary>Is the footer disclaimer legal advice?</summary>
-            <p>No. It is a neutral starting point for a firm that sells simulated evaluations. Replace it with wording your lawyer has reviewed for the countries you sell into.</p>
-          </details>
-        </div>
-      </section>
-    </main>
-
-    <footer class="foot">
-      <div class="wrap foot-row">
-        <span>MIT licensed. Made by <a href="https://propsim.markets/?utm_source=github&amp;utm_medium=template_gallery&amp;utm_campaign=prop-firm-landing-page-templates">PropSim</a>, prop firm software.</span>
-        <a href="https://github.com/PropSim-Enterprise">More from PropSim on GitHub</a>
-      </div>
-    </footer>
+    <div id="app"></div>
+    <noscript>
+      <style>
+        body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.5rem; line-height: 1.6; color: #1a1a1a; }
+        h1 { font-size: 2rem; margin-bottom: 1rem; }
+        .cta { display: inline-block; margin-top: 1.5rem; padding: 0.875rem 1.5rem; background: #08090a; color: #fff; text-decoration: none; border-radius: 9999px; font-weight: 600; }
+      </style>
+      <h1>Master Finance</h1>
+      <p>Funded trader programs for futures and forex. Transparent evaluations, up to $200K starting capital, up to 90% profit split, automatic scaling to $1M+.</p>
+      <p><strong>Est. 2021</strong> · 12,800+ funded traders · $4.7M+ in profit splits paid</p>
+      <a class="cta" href="signup/">Choose Your Program</a>
+      <p style="margin-top: 2rem; font-size: 0.875rem; color: #666;">This site requires JavaScript. Please enable it to view the full experience.</p>
+    </noscript>
+    <script type="module" src="site/main.tsx"></script>
   </body>
 </html>
